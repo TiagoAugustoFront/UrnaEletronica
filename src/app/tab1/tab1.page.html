@@ -9,9 +9,34 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
+      <ion-title size="large"></ion-title>
     </ion-toolbar>
   </ion-header>
-
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <div class="contentHome">
+    <ion-card class="card">
+      <ion-card-content>
+        <ion-text color="dark">
+          <h1 class="title">Votacao eleicoes 2022</h1>
+        </ion-text>
+        <ion-text color="dark">
+          <h2 class="descriptionForm">Identifique-se eleitor</h2>
+        </ion-text>
+        <ion-item>
+          <ion-label position="floating">N Inscrição</ion-label>
+          <ion-input type="number"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Zona</ion-label>
+          <ion-input type="number"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Secao</ion-label>
+          <ion-input type="number"></ion-input>
+        </ion-item>
+        <div class="contentBtn">
+          <ion-button color="success">Success</ion-button>
+        </div>
+      </ion-card-content>
+    </ion-card>
+  </div>
 </ion-content>

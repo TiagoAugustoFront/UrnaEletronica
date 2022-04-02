@@ -1,0 +1,30 @@
+.contentHome{
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 95%;
+}
+
+.title{
+    text-align: center;
+    font-weight: bold;
+}
+
+.descriptionForm{
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.contentBtn{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 1.5rem;
+}
