@@ -29,7 +29,7 @@ export class DatabaseService {
 
   getCreateTable(){
     const sqls = [];
-    const candidatos = "CREATE TABLE IF NOT EXISTS candidatos (id_candidato integer primary key AUTOINCREMENT,nome_candidato varchar(40), nome_partido varchar(40), sigla_partido varchar(8), numero_partido varchar(2),votos integer);";
+    const candidatos = "CREATE TABLE IF NOT EXISTS candidatos (idCandidato integer primary key AUTOINCREMENT,nomeCandidato varchar(40), nomePartido varchar(40), siglaPartido varchar(8), numeroPartido varchar(2),votos integer);"
     const eleitor = "CREATE TABLE IF NOT EXISTS eleitores (id_eleitor integer primary key AUTOINCREMENT, nome varchar(40), titulo varchar(12));";
     sqls.push(candidatos);
     sqls.push(eleitor);

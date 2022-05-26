@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>candidato-list</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-searchbar placeholder="Pesquisar"
+    (ionClear="doSerchClear()")
+    (ionClear="doSerchBarChange($event)")
+  >
+  </ion-searchbar>
+
+  <ion-list>
+    <ion-item-sliding *ngFor="let candidato of candidatos">
+      <ion-label>{{condidatos.name}}</ion-label>
+    </ion-item-sliding>
+  </ion-list>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-buttom color="secondary" [routerLink]="new">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-buttom>
+  </ion-fab>
+</ion-content>

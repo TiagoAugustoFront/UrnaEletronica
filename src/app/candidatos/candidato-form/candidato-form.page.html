@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{ title }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <form (ngSubmit)="onSubmit()">
+    <ion-item>
+      <ion-label position="stacked">Nome</ion-label>
+      <ion-input autocapitalize="on" [(ngModel)]="contact.nome"
+      name="nome"></ion-input>
+      <div class="ion-margin-vertical">
+        <ion-button type="submit" color="secondary" expand="block">Salvar</ion-button>
+      </div>
+    </ion-item>
+  </form>
+</ion-content>
